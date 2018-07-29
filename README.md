@@ -4,7 +4,7 @@ A **very** small cross platform package that easily allows you to determine if y
 
 This library has zero external dependencies outside of the standard library and only has one function: `IsAdmin()` which returns a `bool`.
 
-On *nix, this is as simple as getting the effective UID. On Windows, an administrative handle is opened into the LSA's SCManager with requested administrative rights. This library then checks to see if Windows granted this request or not.
+On nix systems, this is as simple as getting the effective UID. On Windows, an administrative handle is opened into the LSA's SCManager with requested administrative rights. This library then checks to see if Windows granted this request or not.
 
 Very easy to use:
 
@@ -38,3 +38,5 @@ Password:
 WE ARE ADMIN
 $ 
 ```
+
+Cheers!
